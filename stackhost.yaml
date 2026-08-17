@@ -1,0 +1,13 @@
+user:
+  name: xenmods
+  github: xenmods
+
+language: "python"
+python_version: "3.11"
+
+commands:
+  build:
+    - "pip install -r requirements.txt"
+  
+  start:
+    - "python manage.py" # DO NOT USE --reload

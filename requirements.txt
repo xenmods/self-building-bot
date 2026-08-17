@@ -1,0 +1,12 @@
+kurigram
+sqlalchemy
+aiosqlite
+asyncpg
+aiomysql
+psycopg2-binary
+motor==3.3.2
+tgcrypto
+python-dotenv
+watchdog
+typer
+httpx
