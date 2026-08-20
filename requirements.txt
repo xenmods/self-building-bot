@@ -10,3 +10,7 @@ python-dotenv
 watchdog
 typer
 httpx
+openai
+beautifulsoup4
+psutil
+pillow
