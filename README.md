@@ -4,7 +4,7 @@
 [![Framework Kurigram](https://img.shields.io/badge/Framework-Kurigram%20%2F%20Pyrogram-blueviolet.svg)](https://github.com/kurigram/kurigram)
 [![Database SQLAlchemy](https://img.shields.io/badge/Database-SQLAlchemy%20%2B%20SQLite%2FPostgreSQL-green.svg)](https://www.sqlalchemy.org/)
 [![AI Engine OpenAI Compatible](https://img.shields.io/badge/AI%20Engine-OpenAI%20%2F%20Gemini%20%2F%20Claude-orange.svg)](https://platform.openai.com/)
-[![License MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+[![License GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 An autonomous, self-building, and self-evolving Telegram bot framework powered by modern Large Language Models (OpenAI-compatible APIs, Google Gemini, Claude, or local LLMs). 
 
@@ -149,13 +149,13 @@ Use the interactive CLI manager:
 
 ### Standard Run:
 ```bash
-python manage.py run
+python manage.py
 ```
 
 ### Hot-Reloading Development Mode:
 Watches the `Bot/` directory and reloads automatically upon file changes:
 ```bash
-python manage.py run --reload
+python manage.py --reload
 ```
 
 ### Interactive CLI Controls:
@@ -215,4 +215,4 @@ Expected output:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the terms of the GNU General Public License v3.0 (GPL-3.0) - see the [LICENSE](LICENSE) file for details.
