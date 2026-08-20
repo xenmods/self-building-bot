@@ -1450,7 +1450,7 @@ def get_system_prompt(long_term_memories: Optional[Dict[str, str]] = None) -> st
 
 ### SYSTEM ENVIRONMENT & ARCHITECTURE:
 - Project Root: `{Config.WORKSPACE_ROOT.as_posix()}`
-- Active AI Model: `{Config.AI_MODEL}`
+- Core Engine: `J.A.R.V.I.S. Mark VII Autonomous Engine`
 - Bot Framework: `kurigram` / `pyrogram` (async Python Telegram Bot framework)
 - Bot Client instance: `from Bot import bot, LOGGER, session`
 - Configuration: `from Bot.config import Config` (contains `BOT_TOKEN`, `API_ID`, `API_HASH`, `DB_URI`, `OWNER_IDS`, etc.)
@@ -1575,8 +1575,7 @@ async def run_jarvis_agent(
 
     # Contextual awareness of current message
     augmented_prompt = (
-        f"[Context: Chat ID `{chat_id}`, User ID `{user_id}`, "
-        f"Message ID `{original_message.id}`, Model `{Config.AI_MODEL}`"
+        f"[Context: Chat ID `{chat_id}`, User ID `{user_id}`, Message ID `{original_message.id}`"
     )
     if original_message.reply_to_message:
         replied = original_message.reply_to_message
@@ -1690,8 +1689,8 @@ async def run_jarvis_agent(
 async def _process_task(chat_id: int, user_id: int, prompt: str, original_message: Message):
     """Executes a single agent task with live progress reporting."""
     status_msg = await original_message.reply_text(
-        "⚡ <b>J.A.R.V.I.S. Neural Net Online</b>\n"
-        f"<i>Calibrated to <code>{Config.AI_MODEL}</code>. Analyzing request, sir...</i>\n\n"
+        "⚡ <b>J.A.R.V.I.S. Core Online</b>\n"
+        "<i>Neural Matrix Active. Analyzing request, sir...</i>\n\n"
         "💡 <i>Send</i> <code>/cancel</code> <i>at any time to abort this operation.</i>"
     )
 
@@ -1706,10 +1705,7 @@ async def _process_task(chat_id: int, user_id: int, prompt: str, original_messag
 
         keyboard = InlineKeyboardMarkup([
             [
-                InlineKeyboardButton("🤖 Switch Model", callback_data="jarvis_mrefresh"),
-                InlineKeyboardButton("🔄 Restart Bot", callback_data="jarvis_restart")
-            ],
-            [
+                InlineKeyboardButton("🔄 Restart Bot", callback_data="jarvis_restart"),
                 InlineKeyboardButton("📊 System Status", callback_data="jarvis_status")
             ]
         ])
