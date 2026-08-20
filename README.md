@@ -58,6 +58,20 @@ Equipped with the **J.A.R.V.I.S. Brain Module**, the bot can autonomously write 
 
 ---
 
+## 🔌 Drop-In Brain for Any Existing Bot
+
+Have an existing Telegram bot that you want to bring back to life? You can drop the **J.A.R.V.I.S. Brain** into any existing Pyrogram / Kurigram codebase in under 3 minutes!
+
+Once dropped in, your existing bot gains the ability to:
+- **Fix its own broken modules** and syntax errors via chat requests.
+- **Write new commands, features, and SQL tables** on-the-fly.
+- **Answer questions and search the web** without manual coding.
+- **Restart itself cleanly** to apply updates without touching your terminal.
+
+👉 **Read the full [Drop-In J.A.R.V.I.S. Brain Integration Guide](docs/DROP_IN_GUIDE.md)** for step-by-step setup instructions.
+
+---
+
 ## 📁 Project Structure
 
 ```text
